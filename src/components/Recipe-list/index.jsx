@@ -24,14 +24,15 @@ const RecipeList = ({ item }) => {
           {item?.title}
         </h4>
 
-        <Link 
-          to={`/recipe-item/${item.id}`} 
-          className='text-xs sm:text-sm mt-4 sm:mt-5 
-                     p-2 sm:p-3 px-5 sm:px-8 
-                     rounded-lg uppercase font-medium tracking-wider 
-                     inline-block shadow-md bg-green-500 text-white'>
-          Recipe Details
-        </Link>
+       <Link 
+  to={`/details/${item.id}`} 
+  className="text-xs sm:text-sm mt-4 sm:mt-5 
+             p-2 sm:p-3 px-5 sm:px-8 
+             rounded-lg uppercase font-medium tracking-wider 
+             inline-block shadow-md bg-green-500 text-white">
+  Recipe Details
+</Link>
+
       </div>
 
     </div>
